@@ -21,4 +21,32 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+    }
+  }
+
+  .formg {
+    padding: 22px;
+  }
+
+  .playlist {
+  background-color: black;
+  color: white;
+  height: 400px;
+  overflow: scroll;
+}
+
+.group {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.Mycard {
+  background-color: grey;
+  color: black;
+  width: 400px;
+  padding: 5px;
 }

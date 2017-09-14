@@ -39,7 +39,7 @@ render() {
         onClick={this.fetchData}
           value="update"
   />
-    <div className="play-list">
+    <div className="playlist">
       <PlayListItem songRender={this.state} onClick={this.fetchData} />
     </div>
 </div>

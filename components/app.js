@@ -17,16 +17,15 @@ class App extends Component {
      }
      render() {
        return (
-         <div className="App">
-            <NavBar />
+           <div className="App">
+              <NavBar />
             <div className="row">
 
-            <PlayListForm
-            userName={this.state.userName}
-            songTitle={this.state.songTitle}
-            songArtist={this.state.songArtist}
-            songNotes={this.state.songNotes}
-            />
+              <PlayListForm
+              userName={this.state.userName}
+              songTitle={this.state.songTitle}
+              songArtist={this.state.songArtist}
+              songNotes={this.state.songNotes} />
 
                 <PlayList />
               </div>
