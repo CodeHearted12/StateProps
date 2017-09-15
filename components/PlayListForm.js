@@ -8,7 +8,7 @@ class PlayListForm extends Component {
       songArtist: "",
        songTitle: "",
        songNotes: ""
-     }
+     };
    }
 
    handleUserName = (e) => {
@@ -34,23 +34,25 @@ addToList = (e) => {
     songTitle: e.target.value,
     songArtist: e.target.value,
     songNotes: e.target.value
-  })
+  });
   let listItem = JSON.stringify(this.state);
 
-  fetch("https://tiny-lasagna-server.herokuapp.com/collections/playlisting", {
+  fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting', {
     method: "POST",
     body: listItem,
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json'
             }
-          }
-          ).then(response => {
+          })
+          .then(response => {
             console.log(response, "got it");
-            }).catch(err => {
+            })
+            .catch(err => {
                console.log(err, "something wrong!");
                });
-               this.setState({userName: '', songNotes: '', songArtist: '', songTitle:''});
+               this.setState({userName: '', songNotes: '', songArtist: '', songTitle:''
+              });
              }
 
              render() {

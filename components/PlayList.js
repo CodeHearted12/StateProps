@@ -8,6 +8,7 @@ class PlayList extends Component {
      this.state = { songs: [] };
    }
 
+
    fetchData = e => {
      e.preventDefault();
      fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting')
@@ -37,8 +38,7 @@ render() {
     type="button"
       className="btn btn-outline-primary"
         onClick={this.fetchData}
-          value="update"
-  />
+          value='update'/>
     <div className="playlist">
       <PlayListItem songRender={this.state} onClick={this.fetchData} />
     </div>
